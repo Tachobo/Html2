@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto">
+    <meta name="author" content="Wilmer">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="index.html">Portafolio</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="productos.html">Productos</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <table>
+                        <tr>
+                            <td><label for="Nombre">Nombre</label></td>
+                            <td><input type="text" id="Nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Apellido">Apellido</label></td>
+                            <td><input type="text" id="Apellido" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Edad">Edad</label></td>
+                            <td><input type="number" id="Edad" step="0.5" min="15" max="34" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Ciudad">Ciudad</label></td>
+                            <td>
+                                <select name="Ciudad" id="Ciudad">
+                                    <option value="1">Barranquilla</option>
+                                    <option value="2">Cúcuta</option>
+                                    <option value="3">Tolima</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Consulta">Consulta</label></td>
+                            <td>
+                                <select name="tipo" id="Consulta">
+                                    <option value="cotizacion">Cotización</option>
+                                    <option value="soporte">Soporte</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mensaje">Mensaje:</label></td>
+                            <td><textarea name="mensaje" id="mensaje" required rows="5" cols="30"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    <input type="checkbox" name="acepto" required> Acepto que me contactes con la información enviada.
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <p>
+                    <button>Enviar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

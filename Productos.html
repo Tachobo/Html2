@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carrito de compras de productos">
+  <meta name="author" content="Wilmer">
+  <title>Carrito de compras</title>
+</head>
+<body>
+  <header>
+    <h1>Carrito de compras</h1>
+    <nav>
+      <a href="index.html">Portafolio</a> |
+      <a href="contacto.html">Contacto</a> |
+      <a href="blog.html">Blog</a> |
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <form>
+      <h2>Selecciona tus productos</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Descripción</th>
+              <th>Precio (COP)</th>
+              <th>Seleccionar</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tamal</td>
+              <td>Tamala de carne</td>
+              <td>7000</td>
+              <td><input type="checkbox" name="Tamal_Carne"></td>
+              <td><input type="number" name="Cant_Tamal_Carne" step="5" min="0" value="0"></td>
+            </tr>
+            <tr>
+              <td>Ayaco</td>
+              <td>Ayaco de Pollo</td>
+              <td>5000</td>
+              <td><input type="checkbox" name="Ayaco_pollo"></td>
+              <td><input type="number" name="Cant_Ayaco_pollo" step="3" min="0" value="0"></td>
+            </tr>
+            <tr>
+              <td>Masato</td>
+              <td>Masato Fresco</td>
+              <td>2500</td>
+              <td><input type="checkbox" name="Masato_fresco"></td>
+              <td><input type="number" name="Cant_Masato_fresco" step="2" min="0" value="0"></td>
+            </tr>
+          </tbody>
+        </table>
+        <fieldset>
+          <legend>Datos del cliente</legend>
+          <table>
+            <tbody>
+          <tr>
+            <td><label>Nombre:</label></td>
+            <td><input type="text" name="Nombre Cliente" required></td>
+          </tr>
+          <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" name="Email Cliente" required></td>
+          </tr>  
+          <tr>
+          <td><label>Método de pago:</label></td>
+          <td>
+              <select name="Método de pago">
+              <option>Nequi</option>
+              <option>Tarjeta</option>
+              <option>Otro</option>
+              </select>
+          </td>  
+          </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <p>
+          <button>Enviar pedido</button>
+        </p>
+      </form>
+    </section>
+    <section>
+      <h3>Cómo funciona este carrito</h3>
+      <ol>
+        <li>Marca los productos que quieres comprar.</li>
+        <li>Indica la cantidad de cada uno.</li>
+        <li>Rellena tus datos.</li>
+        <li>Presiona "Enviar pedido".</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
